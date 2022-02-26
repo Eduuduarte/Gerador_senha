@@ -83,7 +83,7 @@ span{
 
 .password{
     height: 40px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.7);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -115,6 +115,7 @@ span{
 }
 .hide{
     display: none;
+    visibility: hidden;
 }
 
 .tool:hover .tooltip{
@@ -122,3 +123,20 @@ span{
     opacity: 1;
     bottom: 50px;    
 } 
+
+#fechar{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+    transition: font-size 300ms;
+}
+
+.icon:hover{
+    font-size: 35px;
+}

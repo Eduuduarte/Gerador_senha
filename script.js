@@ -3,6 +3,7 @@ let btn = document.querySelector('#btn')
 let sizePassword = document.querySelector('#valor')
 let passWord = document.querySelector('#password')
 let container = document.querySelector('#hide')
+let icon = document.querySelector('#icon')
 
 let charset = "absdefghijklmnopqrstuvxyzwABCDEFGHIJLMNOPQRSTUVXYZWK@!"
 let novaSenha = ""
@@ -21,6 +22,7 @@ function genaratePassword(){
     }
 
     container.classList.remove("hide")
+    icon.classList.remove("hide")
     passWord.innerHTML = pass
     novaSenha = pass
 
@@ -29,4 +31,9 @@ function genaratePassword(){
 function copyPassword(){
     navigator.clipboard.writeText(novaSenha)
     alert("Senha copiada com sucesso!")
+}
+
+function fechar(){
+    container.classList.add("hide")
+    icon.classList.add("hide")
 }

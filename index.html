@@ -8,6 +8,9 @@
     <title>Gerar senha</title>
     
     <link rel="stylesheet" href="estilo.css" type="text/css">
+
+    <!-- Font Awesome -->
+    <link href="fontawesome/css/all.css" rel="stylesheet">
     
     
 </head>
@@ -22,13 +25,19 @@
                 <button id="btn" class="btn" onclick="genaratePassword()">Gerar senha</button>
             </div>
         </section>
+            
+        <section>
             <div id="hide" class="container tool hide" onclick="copyPassword()">
                 <span>Sua senha gerada foi:</span>
                 <span class="password" id="password">12345667877</span>
                 <Span class="tooltip">Clique na senha para copiar.</Span>
             </div>
-        <section>
-            
+        </section>
+
+        <section id="fechar">
+            <div class="container">
+                <i id="icon" class="fa-solid fa-circle-xmark icon hide" onclick="fechar()"></i>
+            </div>
         </section>
     </main>
 
