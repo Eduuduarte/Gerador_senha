@@ -20,7 +20,7 @@ main{
 
 section{
     width: 100%;
-    min-width: 300px;
+    min-width: 450px;
 }
 
 h1{
@@ -98,7 +98,7 @@ span{
     display: none;
 }
 
-.hide:hover .tooltip{
+.tool:hover .tooltip{
     visibility: visible;
     opacity: 1;
     bottom: 50px;    

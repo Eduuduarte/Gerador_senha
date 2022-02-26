@@ -17,12 +17,12 @@
     <main>
         <section>
             <div class="container">
-                <span>Tamanho <span id="valor"></span> Caracteres</span>
+                <span>Tamanho: <span id="valor"></span> Caracteres</span>
                 <input id="slider" class="slider" type="range" min="5" max="30" value="12">
-                <button class="btn">Gerar senha</button>
+                <button id="btn" class="btn" onclick="genaratePassword()">Gerar senha</button>
             </div>
         </section>
-            <div class="container hide">
+            <div id="hide" class="container tool hide" onclick="copyPassword()">
                 <span>Sua senha gerada foi:</span>
                 <span class="password" id="password">12345667877</span>
                 <Span class="tooltip">Clique na senha para copiar.</Span>
